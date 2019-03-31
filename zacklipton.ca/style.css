@@ -35,30 +35,82 @@ header a img {
 /*main-content*/
 
 div.main-content {
-	padding-top: 60px;
+	padding: 100px 40px 40px 40px;
 	position: relative;
 	background: url("images/scotland.jpg") no-repeat;
 	background-position-y: 35%;
 	box-shadow: inset 0 0 0 1000px rgba(255,255,255,.6);
+	min-height: 700px;
 }
 
 div.welcome {
-	height: 300px;
-	padding: 40px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  	grid-auto-rows: minmax(100px, auto);
+  	grid-gap: 10%;
+  	align-items: center;
 }
 
 div.welcome > h1 {
-	font-size: 4em;
+	grid-column: 1;
+	grid-row: 1;
+	margin: 0 auto;
+	font-size: 4vw;
+}
+div.welcome > h1 > a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #215D7F;
+	transition: all .2s ease-in-out;
 	display: inline-block;
+}
+div.welcome > h1 > a:hover {
+	transform: scale(1.1);
+}
+div.welcome > h1 > a > i {
+	font-size: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .image-square {
-  background: url("images/zack.jpg") 50% 50% no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  width: 250px;
-  height: 250px;
-  display: inline-block;
-  float: right;
-  border-radius: 50%;
+	grid-column: 2;
+	grid-row: 1;
+  	background: url("images/zack.jpg") 50% 50% no-repeat;
+  	background-size: cover;
+  	overflow: hidden;
+  	width: 250px;
+  	height: 250px;
+  	border-radius: 50%;
+  	margin: 0 auto;
+  	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.68);
 }
+
+/* Who Am I? */
+
+div.who-am-i {
+	grid-column: 1/3;
+	grid-row: 2;
+}
+
+
+footer {
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+	padding: 10px 0;
+	position: relative;
+	display: block;
+	background-color: #215D7F;
+}
+
+footer > .left {
+	float: left;
+}
+
+footer > .right {
+	float: right;
+}
+
+
+
