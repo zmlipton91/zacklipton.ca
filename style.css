@@ -3,6 +3,8 @@ body {
     display: block;
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
     box-sizing: border-box;
     font-family: Montserrat, sans-serif;
 }
@@ -11,7 +13,8 @@ body {
     display: grid;
     background: url("images/scotland.jpg") no-repeat;
     background-position-y: 35%;
-    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, .6);
+    box-shadow: inset 0 0 0 100000px rgba(255, 255, 255, .6);
+    background-size: cover;
     grid-template-columns: 10% 35% 10% 35% 10%;
     grid-template-rows: 1fr 3fr 3fr 1fr;
     grid-row-gap: 1em;
@@ -23,6 +26,10 @@ body {
 }
 
 @media all and (max-width: 767px) {
+    html, body {
+        height: auto;
+    }
+
     body {
         grid-template-columns: 10% 35% 10% 35% 10%;
         grid-template-rows: 0.5fr 1.5fr 1fr 3fr 1fr;
@@ -32,6 +39,7 @@ body {
         ". welcome welcome welcome ."
         ". who-am-i who-am-i who-am-i ."
         "footer footer footer footer footer";
+
     }
 }
 
