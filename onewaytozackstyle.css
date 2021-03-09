@@ -1,0 +1,133 @@
+html {
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "Area1 Area2 Area2"
+        "Area3 Area4 Area5";
+}
+
+.Area {
+    padding: 34px 24px;
+
+}
+
+.Area1 {
+    grid-area: Area1;
+    background-color: #EB5833;
+}
+
+.Area2 {
+    grid-area: Area2;
+    background-color: #EF9BBE;
+}
+
+.Area3 {
+    grid-area: Area3;
+    background-color: #93D1AC;
+
+}
+
+.Area4 {
+    grid-area: Area4;
+    background-color: #F6B633;
+}
+
+.Area5 {
+    grid-area: Area5;
+    background-color: #8A65DD;
+}
+
+.time-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.time {
+    display: flex;
+}
+
+h3 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "Area1"
+            "Area2"
+            "Area3"
+            "Area4"
+            "Area5";
+    }
+
+    .Area {
+        padding: 34px 24px;
+
+    }
+
+    .Area1 {
+        grid-area: Area1;
+        background-color: #EB5833;
+    }
+
+    .Area2 {
+        grid-area: Area2;
+        background-color: #EF9BBE;
+    }
+
+    .Area3 {
+        grid-area: Area3;
+        background-color: #93D1AC;
+
+    }
+
+    .Area4 {
+        grid-area: Area4;
+        background-color: #F6B633;
+    }
+
+    .Area5 {
+        grid-area: Area5;
+        background-color: #8A65DD;
+    }
+
+    .time-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .time {
+        display: flex;
+    }
+
+    h3 {
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
+}
