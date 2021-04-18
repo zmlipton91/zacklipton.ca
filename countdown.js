@@ -39,8 +39,8 @@ function initializeClock(id, endtime) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  initializeClock('clockdiv-2', new Date('2021-04-18'));
-  initializeClock('clockdiv-3', new Date('2021-04-22'));
+  initializeClock('clockdiv-2', new Date('2021-04-20'));
+  initializeClock('clockdiv-3', new Date('2021-04-23'));
   initializeClock('clockdiv-4', new Date('2021-05-17'));
   initializeClock('clockdiv-5', new Date('2021-06-21'));
 });
